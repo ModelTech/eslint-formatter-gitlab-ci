@@ -3,7 +3,7 @@
     "name": "Rakushin Alexander"
   },
   "bugs": {
-    "url": "https://yamato.modeltech.ru/devops/eslint-junit-gitlab/issues"
+    "url": "https://github.com/ModelTech/eslint-junit-gitlab/issues"
   },
 
   "bundleDependencies": false,
@@ -26,13 +26,13 @@
     "utils",
     "constants"
   ],
-  "homepage": "https://yamato.modeltech.ru/devops/eslint-junit-gitlab#readme",
+  "homepage": "https://github.com/ModelTech/eslint-junit-gitlab#readme",
   "license": "Apache-2.0",
   "main": "index.js",
   "name": "eslint-junit-gitlab",
   "repository": {
     "type": "git",
-    "url": "git+https://yamato.modeltech.ru/devops/eslint-junit-gitlab.git"
+    "url": "git+https://github.com/ModelTech/eslint-junit-gitlab.git"
   },
   "scripts": {
     "start": "eslint lib -f ./index.js constants/*.js utils/*.js index.js",
