@@ -1,0 +1,48 @@
+{
+  "author": {
+    "name": "Jonathan Gertig"
+  },
+  "bugs": {
+    "url": "https://github.com/jcgertig/eslint-junit-gitlab/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "strip-ansi": "^4.0.0",
+    "xml": "^1.0.1"
+  },
+  "deprecated": false,
+  "description": "A eslint result processor that generates junit xml files",
+  "devDependencies": {
+    "eslint": "4.6.1",
+    "jest": "^21.0.1",
+    "libxmljs": "^0.18.4"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "files": [
+    "index.js",
+    "utils",
+    "constants"
+  ],
+  "homepage": "https://github.com/jcgertig/eslint-junit-gitlab#readme",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "eslint-junit-gitlab",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcgertig/eslint-junit-gitlab.git"
+  },
+  "scripts": {
+    "start": "eslint lib -f ./index.js constants/*.js utils/*.js index.js",
+    "test": "jest --coverage"
+  },
+  "tags": [
+    "eslint",
+    "junit",
+    "coverage",
+    "ci"
+  ],
+  "version": "1.0.1"
+}
