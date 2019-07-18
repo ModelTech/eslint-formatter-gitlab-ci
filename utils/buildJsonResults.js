@@ -1,5 +1,3 @@
-const stripAnsi = require('strip-ansi'); // eslint-disable-line
-
 const buildTemplate = function buildTemplate (template, obj) {
   return template.replace(/{([^{}]*)}/g, (capture) => {
     const key = capture.slice(1, capture.length - 1);
@@ -54,24 +52,9 @@ module.exports = function buildJsonResults (report, appDirectory, options) {
 
     // Iterate through test cases
     suite.messages.forEach((tc) => {
-      // let opt = Object.assign({},tc);
-      //  Object.assign(opt,{path:testSuite.testsuite[0]._attr.name});
 
-
-      // const testCase = {
-      //   'testcase': [
-      //     {
-      //       '_attr': {
-      //         'classname': buildTemplate(options.classNameTemplate, opt),
-      //         'name': buildTemplate(options.titleTemplate, opt),
-      //         'time': 1
-      //       }
-      //     }
-      //   ]
-      // };
       const addTag = function addTag (type) {
         let opt = Object.assign({},tc);
-        opt.message = stripAnsi(tc.message);
         opt.level = (tc.severity === 1)?'warn':'error';
 
 

@@ -1,14 +1,14 @@
 {
   "author": {
-    "name": "Jonathan Gertig"
+    "name": "Rakushin Alexander"
   },
   "bugs": {
-    "url": "https://github.com/jcgertig/eslint-junit-gitlab/issues"
+    "url": "https://yamato.modeltech.ru/devops/eslint-junit-gitlab/issues"
   },
+
   "bundleDependencies": false,
   "dependencies": {
     "mkdirp": "^0.5.1",
-    "strip-ansi": "^4.0.0",
     "xml": "^1.0.1"
   },
   "deprecated": false,
@@ -26,13 +26,13 @@
     "utils",
     "constants"
   ],
-  "homepage": "https://github.com/jcgertig/eslint-junit-gitlab#readme",
+  "homepage": "https://yamato.modeltech.ru/devops/eslint-junit-gitlab#readme",
   "license": "Apache-2.0",
   "main": "index.js",
   "name": "eslint-junit-gitlab",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jcgertig/eslint-junit-gitlab.git"
+    "url": "git+https://yamato.modeltech.ru/devops/eslint-junit-gitlab.git"
   },
   "scripts": {
     "start": "eslint lib -f ./index.js constants/*.js utils/*.js index.js",
@@ -44,5 +44,5 @@
     "coverage",
     "ci"
   ],
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
