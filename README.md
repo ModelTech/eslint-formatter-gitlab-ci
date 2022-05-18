@@ -5,24 +5,24 @@
 [![Dev Dependencies][dev-deps]][package-url]
 [![License][license]][package-url]
  
-# eslint-junit-gitlab
-A eslint reporter that creates compatible junit xml files
+# eslint-formatter-gitlab-ci
+A eslint reporter that creates compatible junit xml files friendly for gitlab-ci
 
 ## Installation
 ```shell
-yarn add --dev eslint-junit-gitlab
+yarn add --dev eslint-formatter-gitlab-ci
 ```
 
 ## Usage
 Simply run:
 
 ```shell
-eslint -f ./node_modules/eslint-junit-gitlab/index.js
+eslint -f gitlab-ci .
 ```
 
 ## Configuration
 
-`eslint-junit-gitlab` offers four configurations based on environment variables or a `eslint-junit-gitlab` key defined in `package.json`. All configuration values should be **strings**.
+`eslint-formatter-gitlab-ci` offers four configurations based on environment variables or a `eslint-formatter-gitlab-ci` key defined in `package.json`. All configuration values should be **strings**.
 
 | Variable Name | Description | Default |
 |--|--|--|
